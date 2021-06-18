@@ -6,7 +6,7 @@ order by 3,4
 --From Covid_Project..CovidVaccinations$
 --order by 3,4 
 
--- Select the Data the I will be using
+-- Select the Data that I will be using
 
 Select Location, date, total_cases, new_cases, total_deaths, population 
 From Covid_Project..CovidDeaths$
