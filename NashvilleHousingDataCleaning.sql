@@ -45,7 +45,7 @@ Join NashvilleHousingData b
 	and a.[UniqueID ] <> b. [UniqueID ]
 Where a.PropertyAddress is null
 
---Used a Join to show use the relationship between ParcelID and Property Address to replace NULL values with the proper Address
+--Used a Join to show the relationship between ParcelID and Property Address to replace NULL values with the proper address
 ---------------------------------------------------------------------
 
 
@@ -106,7 +106,7 @@ add OwnerSplitState nvarchar(255);
 Update NashvilleHousingData
 SET OwnerSplitState = PARSENAME(REPLACE(OwnerAddress,',','.'), 1)
 
---Used SUBSTRING and PARSENAME to seperate out the Address values into more usuable data format
+--Used SUBSTRING and PARSENAME to seperate out the Address values into more a usuable data format
 ---------------------------------------------------------------------------------
 
 --Change Y and N to 'Yes' and 'No' in 'Sold as Vacant' field
